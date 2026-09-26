@@ -1,0 +1,61 @@
+{
+  "scope": "category",
+  "context_id": "restaurants",
+  "version": 1,
+  "delivered_at": "2026-04-26T09:45:00Z",
+  "payload": {
+    "slug": "restaurants",
+    "display_name": "Restaurants & Cafes",
+    "voice": {
+      "tone": "warm_busy_practical",
+      "register": "fellow_operator",
+      "code_mix": "hindi_english_natural",
+      "vocab_allowed": ["footfall", "covers", "AOV", "RPC", "table turnover", "thali", "biryani"],
+      "vocab_taboo": ["best food in city", "guaranteed packed house", "viral guarantee"],
+      "salutation_examples": ["Hi {chef_or_owner_first_name}", "{restaurant_name} team"],
+      "tone_examples": [
+        "Quick one — IPL match nights have been 1.5x your weekday avg this season",
+        "Spotted: 'biryani delivery' searches in your sublocality up 28% this week"
+      ]
+    },
+    "offer_catalog": [
+      {"id": "res_003", "title": "Weekday Lunch Thali @ ₹149", "value": "149", "audience": "new_user", "type": "service_at_price"},
+      {"id": "res_005", "title": "Match-night Combo @ ₹399 (food + drink)", "value": "399", "audience": "new_user", "type": "service_at_price"}
+    ],
+    "peer_stats": {
+      "scope": "metro_casual_dining_2026",
+      "avg_rating": 4.2,
+      "avg_review_count": 142,
+      "avg_views_30d": 4800,
+      "avg_calls_30d": 38,
+      "avg_directions_30d": 95,
+      "avg_ctr": 0.025
+    },
+    "digest": [
+      {
+        "id": "d_2026W17_ipl_window",
+        "kind": "seasonal",
+        "title": "IPL home-match Saturdays underperformed weeknight matches across metros",
+        "source": "magicpin order data, Apr 2026",
+        "summary": "Saturday IPL matches shift orders to home-watch parties; restaurant covers down 12% vs Saturday average. Weeknight matches drive +18% covers.",
+        "actionable": "Push match-night combos on Tue/Wed/Thu match dates only"
+      },
+      {
+        "id": "d_2026W17_zomato_visibility",
+        "kind": "trend",
+        "title": "Zomato verified badge correlates with +24% impressions in Tier-1 cities",
+        "source": "Zomato partner update, Apr 2026",
+        "summary": "Verification requires uploaded GST cert + 6 months continuous operation. Most eligible mid-size restaurants haven't applied; 5-day approval.",
+        "actionable": "Apply via partner dashboard if you have crossed 6 months"
+      }
+    ],
+    "seasonal_beats": [
+      {"month_range": "Mar-Apr", "note": "IPL season — match-night promos on Tue/Wed/Thu; not weekends"},
+      {"month_range": "Oct-Nov", "note": "Diwali corporate gifting + family-feast bookings"}
+    ],
+    "trend_signals": [
+      {"query": "weekday lunch thali", "delta_yoy": 0.34, "segment_age": "office_25-45", "skew": "balanced"},
+      {"query": "small party catering", "delta_yoy": 0.22, "segment_age": "30-50", "skew": "female"}
+    ]
+  }
+}
